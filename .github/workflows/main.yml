@@ -1,16 +1,13 @@
 name: FirstAction
 
 on:
- push:
-  branches: [ main ]  
+  push:
+    branches: [ main ]
 
+jobs:
+  demo:
+    runs-on: ubuntu-latest
 
-  jobs:
-     demo:
-
-     runs-on: unbuntu-latest
-
-     steps:
+    steps:
       - name: Greetings
-      run: echo "Hello world"
-      
+        run: echo "Hello world"
